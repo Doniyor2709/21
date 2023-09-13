@@ -1,0 +1,53 @@
+a{
+  text-decoration: none;
+  margin: 30px;
+  color: rgb(246, 246, 0);
+
+}
+
+body{
+background: #000;
+}
+
+.users-row{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 54px;
+}
+
+h3{
+color: aliceblue;
+}
+
+p{
+  color: rgb(81, 255, 113);
+}
+
+.user-posts-row{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+column-gap: 60px;
+width: 100%;
+}
+
+
+
+#loading {
+	position: fixed;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	z-index: 100;
+	transition: 0.5s;
+}
+
+#loading.loading-none {
+  opacity: 0;
+  z-index: -1;
+}
